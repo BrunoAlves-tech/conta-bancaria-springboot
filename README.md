@@ -29,10 +29,12 @@
 ###
 
 <h4 align="left">3. Diagrama de Classes</h4>
+<img width="1050" height="1170" alt="image" src="https://github.com/user-attachments/assets/0f2fb179-f424-4e1f-aa68-49b5a5461c38" />
 
 ###
 
 <h4 align="left">4. Tela Inicial do Sistema - Menu</h4>
+<img width="1128" height="702" alt="image" src="https://github.com/user-attachments/assets/55590d56-3111-47ef-86d4-888e02f5c7f4" />
 
 ###
 
