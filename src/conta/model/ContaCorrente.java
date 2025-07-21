@@ -1,6 +1,10 @@
 package conta.model;
 
-public class ContaCorrente extends Conta{
+
+
+import java.text.NumberFormat;
+
+public class ContaCorrente extends Conta {
 
 	private float limite;
 
@@ -8,7 +12,7 @@ public class ContaCorrente extends Conta{
 		super(numero, agencia, tipo, titular, saldo);
 		this.limite = limite;
 	}
-	
+
 	public float getLimite() {
 		return limite;
 	}
@@ -16,24 +20,23 @@ public class ContaCorrente extends Conta{
 	public void setLimite(float limite) {
 		this.limite = limite;
 	}
-
+	
 	@Override
-	public boolean sacar(float valor) { 
-		
-		if(this.getSaldo() + this.getLimite() < valor) {
-			System.out.println("\n Saldo Insuficiente!");
+	public boolean sacar(float valor) {
+		if ((this.getSaldo() + this.limite) < valor) {
+			System.out.println("\nSaldo é insuficiente");
 			return false;
 		}
-		
+
 		this.setSaldo(this.getSaldo() - valor);
 		return true;
-		
 	}
 	
-    @Override
+	@Override
 	public void visualizar() {
+		NumberFormat nfMoeda = NumberFormat.getCurrencyInstance();
 		super.visualizar();
-		System.out.println("Limite de Crédito: " + this.limite);
+		System.out.println("Limite da conta: " + nfMoeda.format(this.limite));
 	}
-    
+	
 }

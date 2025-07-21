@@ -1,13 +1,19 @@
 package conta.model;
 
+
+
+import java.text.NumberFormat;
+
 public abstract class Conta {
-  
-  private int numero;
+
+	// Atributos da Classe
+	private int numero;
 	private int agencia;
 	private int tipo;
 	private String titular;
 	private float saldo;
 
+	// Método Construtor
 	public Conta(int numero, int agencia, int tipo, String titular, float saldo) {
 		this.numero = numero;
 		this.agencia = agencia;
@@ -16,6 +22,9 @@ public abstract class Conta {
 		this.saldo = saldo;
 	}
 
+	public Conta() {}
+
+	// Métodos Get e Set
 	public int getNumero() {
 		return numero;
 	}
@@ -56,45 +65,42 @@ public abstract class Conta {
 		this.saldo = saldo;
 	}
 
-	public boolean sacar(float valor) { 
-		
-		if(this.getSaldo() < valor) {
-			System.out.println("\n Saldo Insuficiente!");
+	// Métodos Bancários
+	public boolean sacar(float valor) {
+		if (this.saldo < valor) {
+			System.out.println("\nSaldo é insuficiente");
 			return false;
 		}
-			
-		this.setSaldo(this.getSaldo() - valor);
+
+		this.saldo -= valor;
 		return true;
 	}
 
 	public void depositar(float valor) {
-
-		this.setSaldo(this.getSaldo() + valor);
-
+		this.saldo += valor;
 	}
-	
+
+	// Método para visualizar os dados da conta
 	public void visualizar() {
 
-		String tipo = "";
-		
-		switch(this.tipo) {
-		case 1:
-			tipo = "Conta Corrente";
-		break;
-		case 2:
-			tipo = "Conta Poupança";
-		break;
-		}
-		
-		System.out.println("\n\n***********************************************************");
-		System.out.println("Dados da Conta:");
-		System.out.println("***********************************************************");
-		System.out.println("Numero da Conta: " + this.numero);
-		System.out.println("Agência: " + this.agencia);
-		System.out.println("Tipo da Conta: " + tipo);
-		System.out.println("Titular: " + this.titular);
-		System.out.println("Saldo: " + this.saldo);
+		NumberFormat nfMoeda = NumberFormat.getCurrencyInstance();
 
+		String tipo = "";
+
+		switch (this.tipo) {
+		case 1 -> tipo = "Conta Corrente";
+		case 2 -> tipo = "Conta Poupança";
+		default -> tipo = "Inválido";
+		}
+
+		System.out.println("***************************************");
+		System.out.println("DADOS DA CONTA                         ");
+		System.out.println("***************************************");
+		System.out.println("Número da Conta: " + this.numero);
+		System.out.println("Número da Agência: " + this.agencia);
+		System.out.println("Tipo da Conta: " + tipo);
+		System.out.println("Titular da Conta: " + this.titular);
+		System.out.println("Saldo da Conta: " + nfMoeda.format(this.saldo));
 	}
-  
+
 }
