@@ -1,109 +1,53 @@
-💳 Projeto Conta Bancária - Java
-Sistema simples de gerenciamento de contas bancárias, desenvolvido com foco em estudos de Programação Orientada a Objetos (POO) utilizando Java.
+<h1 align="left">💳 Projeto Conta Bancária - Java</h1>
 
-📌 Descrição
-O Projeto Conta Bancária é uma aplicação console desenvolvida em Java que simula a criação, gerenciamento e movimentação de contas bancárias, incluindo:
+###
 
-Cadastro de contas
+<div align="center">
+  <img height="200" src="https://camo.githubusercontent.com/30a9cb9769ce5f1481af69d25d347bd70d63476712ec90d23404b47c4891ecda/68747470733a2f2f692e696d6775722e636f6d2f496144346c77672e706e67"  />
+</div>
 
-Consultas
+###
 
-Atualizações
+<h4 align="left">💳  Projeto Conta Bancária - Java Sistema simples de gerenciamento de contas bancárias, desenvolvido com foco em estudos de Programação Orientada a Objetos (POO) utilizando Java.</h4>
 
-Remoções
+###
 
-Operações financeiras como depósito, saque e transferência
+<h4 align="left">1.📌 O Projeto Conta Bancária é um sistema de gestão projetado para simular e administrar operações financeiras relacionadas a contas bancárias. Oferece funcionalidades como cadastro, consulta, atualização e remoção de contas, além de transações como depósitos, saques e transferências.</h4>
 
-O sistema utiliza conceitos de POO como:
+###
 
-✅ Classes e Objetos
+<p align="left">Classes e Objetos;<br>Atributos e Métodos;<br>Encapsulamento;<br>Herança;<br>Polimorfismo;<br>Abstração.</p>
 
-✅ Atributos e Métodos
+###
 
-✅ Modificadores de Acesso
+<h4 align="left">2.Funcionalidades</h4>
 
-✅ Herança e Polimorfismo
+###
 
-✅ Classes Abstratas
+<p align="left">Criar Conta (Corrente ou Poupança)<br>Listar todas as Contas<br>Consultar Conta por número<br>Consultar Conta por titular<br>Atualizar dados da Conta<br>Excluir Conta<br>Saque<br>Depósito<br>Transferência entre contas</p>
 
-✅ Interfaces
+###
 
-Este projeto visa reforçar os conhecimentos práticos de Java com base em cenários realistas de uso bancário.
+<h4 align="left">3. Diagrama de Classes</h4>
 
-⚙️ Funcionalidades
-Criar Conta: Cadastro com geração automática do número da conta
+###
 
-Listar Contas: Visualização de todas as contas existentes
+<h4 align="left">4. Tela Inicial do Sistema - Menu</h4>
 
-Consultar Conta por Número: Busca precisa por conta
+###
 
-Consultar Conta por Titular: Busca por nome do titular
+<h4 align="left">5. Requisitos</h4>
 
-Atualizar Conta: Edição dos dados com base no número
+###
 
-Excluir Conta: Remoção definitiva
+<p align="left">Para executar os códigos localmente, você precisará de:<br><br>Java JDK 17+<br>Eclipse ou STS</p>
 
-Saque: Retirada de saldo com validação
+###
 
-Depósito: Adição de saldo
+<h4 align="left">6. Como Executar o projeto no Eclipse/STS</h4>
 
-Transferência: Envio de valores entre contas
+###
 
-📚 Diagrama de Classes
-O projeto utiliza um Diagrama de Classes para representar a estrutura e as relações entre os componentes do sistema (Conta, Conta Corrente, Conta Poupança, etc).
+<p align="left"></p>
 
-📌 [Insira aqui a imagem do diagrama, se desejar]
-Exemplo:
-
-markdown
-Copiar código
-![Diagrama de Classes](https://i.imgur.com/seudiagrama.png)
-🖥️ Tela Inicial (Menu)
-📌 [Insira aqui a imagem do menu, se desejar]
-Exemplo:
-
-markdown
-Copiar código
-![Menu do Sistema]()
-📋 Requisitos
-Java JDK 17 ou superior
-
-Eclipse IDE ou Spring Tool Suite (STS)
-
-🚀 Como Executar
-1. Clone o repositório
-bash
-Copiar código
-git clone https://github.com/BrunoAlves-tech/conta-bancaria-springboot.git
-2. Importe no Eclipse/STS
-Abra o Eclipse ou STS
-
-Vá em: File → Import... → General → Existing Projects into Workspace
-
-Selecione a pasta clonada do projeto
-
-Clique em Finish
-
-3. Execute o projeto
-No Package Explorer, abra a classe Menu
-
-Clique em Run
-
-O sistema será iniciado via console
-
-🤝 Contribuições
-Contribuições são bem-vindas!
-
-🐞 Reporte issues
-
-🔧 Envie pull requests
-
-📤 Compartilhe com quem estiver aprendendo Java
-
-👨‍💻 Autor
-Desenvolvido por Bruno Alves
-🔗 LinkedIn
-🔗 GitHub
-
-📦 Linguagens
-
+###
