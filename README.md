@@ -38,18 +38,4 @@
 
 ###
 
-<h4 align="left">5. Requisitos</h4>
 
-###
-
-<p align="left">Para executar os códigos localmente, você precisará de:<br><br>Java JDK 17+<br>Eclipse ou STS</p>
-
-###
-
-<h4 align="left">6. Como Executar o projeto no Eclipse/STS</h4>
-
-###
-
-<p align="left"></p>
-
-###
